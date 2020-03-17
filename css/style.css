@@ -12,7 +12,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] 1fr [content-start] repeat(10, [col-start] minmax(min-content, 1fr) [col-end]) [content-end] 1fr [full-end];
+  grid-template-columns: [full-start] 1fr [content-start] repeat(20, [col-start] minmax(min-content, 1fr) [col-end]) [content-end] 1fr [full-end];
   grid-template-rows: 50px calc(100vh - 50px) 50vh min-content 40vh 50px; }
   @media only screen and (max-width: 650px) {
     .container {
@@ -21,22 +21,26 @@ body {
 .Navbar {
   font-size: 40px;
   font-family: 'Bangers', cursive;
-  position: fixed;
-  top: 0;
-  width: 100%; }
+  grid-column: 18/ 20; }
 
-.About__sidenav {
-  background-color: palevioletred;
-  grid-column: col-start 1/ 5;
-  grid-row: 2/3; }
-
-.About__bio {
-  background-color: firebrick;
-  grid-column: col-start 4 / 12;
-  grid-row: 2/3; }
-
-.About__img {
-  width: 100%;
-  height: 100%;
-  grid-column: 1 / -1;
-  object-fit: cover; }
+.About {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(min-content, 1fr));
+  grid-template-rows: repeat(5, 1fr);
+  height: calc(100vh - 68px);
+  /*100vh height of screen at time minus navbar of 68  height*/
+  margin-top: 68px;
+  grid-column: full-start / full-end; }
+  .About__sidenav {
+    grid-column: 2/5;
+    grid-row: 1/4;
+    width: 100%;
+    height: 100%; }
+    .About__sidenav img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .About__bio {
+    background-color: firebrick;
+    grid-column: 6 / 17;
+    grid-row: 1/5; }
