@@ -1,8 +1,8 @@
 .About {
   display:grid;
-  grid-template-columns: repeat(18, minmax(min-content, 1fr));
+  grid-template-columns: repeat(18, minmax(max-content, 1fr));
   grid-template-rows:repeat(10, 1fr);
-  height: calc(100vh - 68px); /*100vh height of screen at time minus navbar of 68  height*/
+  // height: calc(100vh - 68px); 
   margin-top: 68px;
   grid-column: full-start / full-end;
   font-family: 'Bangers', cursive;
@@ -11,42 +11,53 @@
   
   &__sidenav{
     display:grid;
-    // background-color: blue;
-    grid-template-columns: repeat(6, minmax(min-content, 1fr));
+    grid-template-columns: repeat(6, minmax(max-content, 1fr));
     grid-template-rows:repeat(4, 1fr);
     grid-column: 2/6;
-    grid-row:  1/6;
+    grid-row:  1/7;
     line-height: 80px;
+    min-width: 300px;
+
+
 
 
     & img {
       grid-column: 1/7;
-      grid-row:  1/4;
+      grid-row:  1/6;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      min-width: 200px;
       
-      
+    //iPhone XR, XS Max
+    @media only screen and (max-width: $large) {
+          visibility: hidden;
+        } 
     }
 
   }
-
-
  
   &__menubar{
     grid-column: 2/6;
     grid-row: 3/3;
-    // width: 265px;
-    // height:404px;
     background-color: $c-purple;
     color: $c-yellow;
     font-size:30px;
+    min-width:200px;
     
-    ul{
+    & ul{
+      // background-color: $c-pink;
       list-style-type:none;
+      min-width: 150px;
     }
   
   } 
+  &__timestamp{
+    grid-column: 2/7;
+    grid-row:8/9;
+    font-size:22px;
+  }
+
   &__bio{
     grid-template-columns: repeat(6, minmax(min-content, 1fr));
     grid-template-rows:repeat(4, 1fr);
@@ -56,19 +67,44 @@
     font-size: 24px;
     
     & img {
-      width: 25%;
+      width: 200px;
       object-fit: cover;
+      border-radius: 100%;
+    
+    //1024 width
+    @media only screen and (max-width: $xlarge) {
+      padding-left:60px;
       border-radius: 100%;
     }
 
-    &__mycontent{
-      grid-column: 8/17;
-      grid-row: 3/5;
-
-     
-    }
-
-
+    //iPhone XR, XS Max
+    @media only screen and (max-width: $large) {
+      // padding-left:66px;
+    } 
   }
 
+  }
+  &__mycontent{
+    grid-column: 8/17;
+    grid-row: 3/5;
+
+    
+    @media only screen and (max-width: $xlarge) {
+      padding-left:60px; 
+    } 
+  }
+    //414px
+    @media only screen and (max-width: $large) {
+      &__menubar{
+        grid-template-columns: 1/1;
+        grid-template-rows: 1;
+        background-color: $c-purple;
+        color: $c-yellow;
+        font-size:30px;
+        min-width:200px;
+      }
+      
+      
+      // background-color: $c-purple;
+  }
 }
