@@ -8,8 +8,8 @@ $c-purple:#9A2A7B;
 
 $xlarge: 1024px; 
 $large: 414px; //iPhone XR, XS Max
-$medium: 650px;
-$small: 450px;
+// $medium: 650px;
+// $small: 450px;
 
 *,
 *::before,
@@ -35,7 +35,9 @@ body {
 
   grid-template-rows: 50px calc(100vh - 50px) 50vh min-content 40vh 50px;
 
-  @media only screen and (max-width: $medium) {
-    grid-template-rows: 50px calc(100vh - 50px) 100vh 50vh min-content 40vh 50px;
+  @media only screen and (max-width: $large) {
+    grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows:repeat(18, 1fr);
+    // grid-template-rows: 50px calc(100vh - 50px) 100vh 50vh min-content 40vh 50px;
   }
 }

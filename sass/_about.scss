@@ -3,12 +3,12 @@
   grid-template-columns: repeat(18, minmax(max-content, 1fr));
   grid-template-rows:repeat(10, 1fr);
   // height: calc(100vh - 68px); 
-  margin-top: 68px;
+  // margin-top: 68px;
   grid-column: full-start / full-end;
   font-family: 'Bangers', cursive;
  
  
-  
+  //side navbar including image
   &__sidenav{
     display:grid;
     grid-template-columns: repeat(6, minmax(max-content, 1fr));
@@ -17,10 +17,8 @@
     grid-row:  1/7;
     line-height: 80px;
     min-width: 300px;
-
-
-
-
+    
+//img of cartoon 
     & img {
       grid-column: 1/7;
       grid-row:  1/6;
@@ -29,14 +27,16 @@
       object-fit: cover;
       min-width: 200px;
       
-    //iPhone XR, XS Max
+    //iPhone XR, XS Max-414px
     @media only screen and (max-width: $large) {
           visibility: hidden;
         } 
     }
 
+
   }
  
+  // displays the actual text and purple background for the navbar
   &__menubar{
     grid-column: 2/6;
     grid-row: 3/3;
@@ -46,18 +46,25 @@
     min-width:200px;
     
     & ul{
-      // background-color: $c-pink;
       list-style-type:none;
       min-width: 150px;
     }
   
   } 
+
+  // shows the time and temp
   &__timestamp{
     grid-column: 2/7;
     grid-row:8/9;
     font-size:22px;
+
+    @media only screen and (max-width: $large) {
+      visibility: hidden;
+    }
+
   }
 
+//includes self image and bio 
   &__bio{
     grid-template-columns: repeat(6, minmax(min-content, 1fr));
     grid-template-rows:repeat(4, 1fr);
@@ -66,6 +73,7 @@
     color: $c-yellow;
     font-size: 24px;
     
+    //my image
     & img {
       width: 200px;
       object-fit: cover;
@@ -76,35 +84,37 @@
       padding-left:60px;
       border-radius: 100%;
     }
-
-    //iPhone XR, XS Max
+    
+    //iPhone XR, XS Max-414px
     @media only screen and (max-width: $large) {
-      // padding-left:66px;
+        grid-column:4/8;     
+        padding-top: 500px; //NO BUENO try to do properly
+      
     } 
+   
   }
 
-  }
+}
+
+// my mini bio
   &__mycontent{
     grid-column: 8/17;
     grid-row: 3/5;
-
     
     @media only screen and (max-width: $xlarge) {
       padding-left:60px; 
     } 
   }
-    //414px
+
+  // ------------for menu extends the purple using container scss
+    //iPhone XR, XS Max-414px
     @media only screen and (max-width: $large) {
       &__menubar{
-        grid-template-columns: 1/1;
-        grid-template-rows: 1;
         background-color: $c-purple;
-        color: $c-yellow;
-        font-size:30px;
-        min-width:200px;
+        grid-column:1/col-end;
+        grid-row:1/1;
+        padding:10px 300px 10px 90px;
+   
       }
-      
-      
-      // background-color: $c-purple;
   }
 }
