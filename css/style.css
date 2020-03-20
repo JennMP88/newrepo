@@ -116,9 +116,71 @@ body {
   grid-template-rows: repeat(4, 1fr);
   grid-column: 8/17;
   grid-row: 1/8;
-  color: black;
+  color: #000;
   font-size: 64px;
   line-height: 68px; }
   .list__web {
-    grid-column: 8/17;
-    grid-row: 1/8; }
+    border-bottom: 40px;
+    border-bottom-color: firebrick;
+    border-bottom-style: solid;
+    border-bottom-width: thick; }
+  .list__excel {
+    border-bottom: 40px;
+    border-bottom-color: firebrick;
+    border-bottom-style: solid;
+    border-bottom-width: thick; }
+  .list__diagrams {
+    border-bottom: 40px;
+    border-bottom-color: firebrick;
+    border-bottom-style: solid;
+    border-bottom-width: thick; }
+
+a:hover {
+  color: #BCB859; }
+
+a:link {
+  text-decoration: none; }
+
+.Content {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(max-content, 1fr));
+  grid-template-rows: repeat(10, 1fr);
+  grid-column: full-start / full-end;
+  font-family: 'Bangers', cursive; }
+
+#webdev {
+  grid-template-columns: repeat(6, minmax(min-content, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+  grid-column: 8/17;
+  grid-row: 1/8;
+  color: #000;
+  font-size: 64px;
+  line-height: 68px; }
+  #webdev .web {
+    border-bottom: 40px;
+    border-bottom-color: firebrick;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    font-size: 64px;
+    line-height: 68px; }
+  #webdev .titles {
+    font-size: 50px;
+    line-height: 53px;
+    color: #BCB859; }
+  #webdev .switchit {
+    font-size: 24px;
+    line-height: 26px;
+    color: #000; }
+  #webdev .lunchmenu {
+    font-size: 24px;
+    line-height: 26px;
+    color: #000; }
+  #webdev .tvshows {
+    font-size: 24px;
+    line-height: 26px;
+    color: #000; }
+  #webdev button {
+    padding: 20px;
+    border-radius: 2px;
+    margin: 40px;
+    font-size: 12px; }
