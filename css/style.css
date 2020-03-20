@@ -103,3 +103,22 @@ body {
       grid-column: 1/col-end;
       grid-row: 1/1;
       padding: 10px 300px 10px 90px; } }
+
+.Projects {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(max-content, 1fr));
+  grid-template-rows: repeat(10, 1fr);
+  grid-column: full-start / full-end;
+  font-family: 'Bangers', cursive; }
+
+.list {
+  grid-template-columns: repeat(6, minmax(min-content, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+  grid-column: 8/17;
+  grid-row: 1/8;
+  color: black;
+  font-size: 64px;
+  line-height: 68px; }
+  .list__web {
+    grid-column: 8/17;
+    grid-row: 1/8; }
