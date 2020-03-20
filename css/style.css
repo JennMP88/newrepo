@@ -30,6 +30,10 @@ body {
   grid-template-rows: repeat(10, 1fr);
   grid-column: full-start / full-end;
   font-family: 'Bangers', cursive; }
+  @media only screen and (max-width: 414px) {
+    .About {
+      grid-template-columns: repeat(30, 1fr);
+      grid-template-rows: repeat(30, 1fr); } }
   .About__sidenav {
     display: grid;
     grid-template-columns: repeat(6, minmax(max-content, 1fr));
@@ -80,16 +84,19 @@ body {
         .About__bio img {
           padding-left: 60px;
           border-radius: 100%; } }
-      @media only screen and (max-width: 414px) {
-        .About__bio img {
-          grid-column: 4/8;
-          padding-top: 500px; } }
+    @media only screen and (max-width: 414px) {
+      .About__bio {
+        grid-column: 10/14;
+        grid-row: 13/20; } }
   .About__mycontent {
     grid-column: 8/17;
     grid-row: 3/5; }
     @media only screen and (max-width: 1024px) {
       .About__mycontent {
         padding-left: 60px; } }
+  @media only screen and (max-width: 414px) {
+    .About__mybio {
+      grid-row: 1/18; } }
   @media only screen and (max-width: 414px) {
     .About__menubar {
       background-color: #9A2A7B;
