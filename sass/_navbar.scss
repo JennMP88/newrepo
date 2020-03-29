@@ -1,7 +1,20 @@
-.Navbar {
-  font-size:40px;
-  width:150px;
-  font-family: 'Bangers', cursive;
-  grid-column: 18/ 20;
- 
+.sticky{
+  position:fixed;
+  top:0;
+  width:100%
 }
+
+.Navbar {
+  display:grid;
+  grid-template-columns: repeat(20, minmax(max-content, 1fr));
+  grid-template-rows:repeat(10, 1fr);
+  grid-column: full-start / full-end;
+  font-family: 'Bangers', cursive;
+
+  &__name{
+    font-size:40px;
+    width:150px;
+    grid-column: 18/ 20;
+  }
+}
+
