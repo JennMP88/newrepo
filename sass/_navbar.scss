@@ -7,9 +7,10 @@
 .Navbar {
   display:grid;
   grid-template-columns: repeat(20, minmax(max-content, 1fr));
-  grid-template-rows:repeat(10, 1fr);
+  // grid-template-rows:repeat(10, 1fr);
   grid-column: full-start / full-end;
   font-family: 'Bangers', cursive;
+  background-color: white;
 
   &__name{
     font-size:40px;

@@ -26,9 +26,9 @@ body {
 .Navbar {
   display: grid;
   grid-template-columns: repeat(20, minmax(max-content, 1fr));
-  grid-template-rows: repeat(10, 1fr);
   grid-column: full-start / full-end;
-  font-family: 'Bangers', cursive; }
+  font-family: 'Bangers', cursive;
+  background-color: white; }
   .Navbar__name {
     font-size: 40px;
     width: 150px;
