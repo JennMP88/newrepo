@@ -1,11 +1,11 @@
 .About {
   display:grid;
-  grid-template-columns: repeat(18, minmax(max-content, 1fr));
-  grid-template-rows:repeat(10, 1fr);
-  grid-column: full-start / full-end;
+  grid-template-columns: repeat(8, minmax(max-content, 1fr));
+  // grid-template-rows:repeat(10, 1fr);
+  
+
   font-family: 'Bangers', cursive;
-  height: calc(100vh - 42px); /*100vh height of screen at time minus navbar of 68  height*/
-  margin-top: 60px;
+  height: calc(100vh - 60px); /*100vh height of screen at time minus navbar of 68  height*/
   // @media only screen and (max-width: $large) {
   //   grid-template-columns: repeat(30, 1fr);
   //   grid-template-rows: repeat(30, 1fr);  
@@ -15,10 +15,7 @@
 //includes self image and bio 
   &__bio{
 
-    grid-template-columns: repeat(6, minmax(min-content, 1fr));
-    grid-template-rows:repeat(4, 1fr);
-    grid-column: 8/17;
-    grid-row: 1/8;
+    grid-column: 2/7;
     color: $c-yellow;
     font-size: 24px;
     margin-top: 10px;
@@ -44,15 +41,15 @@
 }
 
 // my mini bio
-  &__mycontent{
-    grid-column: 8/17;
-    grid-row: 3/5;
+  // &__mycontent{
+  //   grid-column: 8/17;
+  //   grid-row: 3/5;
     
-    // @media only screen and (max-width: $xlarge) {
-    //   padding-left:60px; 
-    // } 
+  //   // @media only screen and (max-width: $xlarge) {
+  //   //   padding-left:60px; 
+  //   // } 
 
-  }
+  // }
     
   // &__mybio{
   //   @media only screen and (max-width: $large) {

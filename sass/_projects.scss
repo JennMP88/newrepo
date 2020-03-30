@@ -1,49 +1,58 @@
-.Projects{
+.Content{
   display:grid;
-  grid-template-columns: repeat(18, minmax(max-content, 1fr));
-  grid-template-rows:repeat(10, 1fr);
-  grid-column: full-start / full-end;
+  grid-template-columns: repeat(8, minmax(max-content, 1fr));
+  // grid-template-rows:repeat(10, 1fr);
   font-family: 'Bangers', cursive;
-
+  height: calc(100vh - 60px);
+  font-family: 'Bangers', cursive;
 }
 
-.list{
-  grid-template-columns: repeat(6, minmax(min-content, 1fr));
-  grid-template-rows:repeat(4, 1fr);
-  grid-column: 8/17;
-  grid-row: 1/8;
+
+#webdev{
+  // grid-template-columns: repeat(6, minmax(min-content, 1fr));
+  // grid-template-rows:repeat(4, 1fr);
+  grid-column: 2/7;
+  // grid-row: 1/8;
   color:$c-black;
   font-size: 64px;
   line-height: 68px;
 
-
-  &__web{
+  .web{
     border-bottom:40px;
     border-bottom-color: $c-red;
     border-bottom-style: solid;
     border-bottom-width: thick; 
+    font-size: 64px;
+    line-height: 68px;
+  }
 
+  .titles{
+    font-size: 50px;
+      line-height: 53px;
+      color:$c-yellow;
   }
-  &__excel{
-    border-bottom:40px;
-    border-bottom-color: $c-red;
-    border-bottom-style: solid;
-    border-bottom-width: thick;
+  .switchit{
+    font-size: 24px;
+    line-height: 26px; 
+    color:$c-black;
+    
   }
-  &__diagrams{
-    border-bottom:40px;
-    border-bottom-color: $c-red;
-    border-bottom-style: solid;
-    border-bottom-width: thick;
+
+  .lunchmenu{
+    font-size: 24px;
+    line-height: 26px;
+    color:$c-black;
+  }
+
+  .tvshows{
+    font-size: 24px;
+    line-height: 26px;
+    color:$c-black;
+  }
+  button{
+    padding:20px;
+    border-radius: 2px;
+    margin:40px;
+    font-size: 12px;
   }
 }
-
-
-
-a:hover{
-  color: $c-yellow;
-}
-
-a:link { 
-  text-decoration: none; 
-} 
