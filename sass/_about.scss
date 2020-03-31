@@ -2,15 +2,9 @@
   display:grid;
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
   // grid-template-rows:repeat(10, 1fr);
-  
-
   font-family: 'Bangers', cursive;
   height: calc(100vh - 60px); /*100vh height of screen at time minus navbar of 68  height*/
-  // @media only screen and (max-width: $large) {
-  //   grid-template-columns: repeat(30, 1fr);
-  //   grid-template-rows: repeat(30, 1fr);  
-  // } 
- 
+
 
 //includes self image and bio 
   &__bio{
@@ -25,49 +19,34 @@
       width: 200px;
       object-fit: cover;
       border-radius: 100%;
-    
-    //1024 width
-    // @media only screen and (max-width: $xlarge) {
-    //   padding-left:60px;
-    //   border-radius: 100%;
-    // }
-    
-  }
-     //iPhone XR, XS Max-414px
-    //  @media only screen and (max-width: $large) {
-    //   grid-column: 10/14;
-    //   grid-row: 13/20; 
-    // } 
+      
+   
+
+      #me{
+        background-color: none;
+      }
+
+           //size 393
+           @media only screen and (max-width: $medium) {
+            grid-row:10/-1;
+            margin-top: 25px;
+            grid-column:5/-1;
+            background-color: yellow;
+          }
+          @media only screen and (max-width: 786px) {
+            // grid-template-columns: repeat(12, minmax(min-content,1fr)); 
+            // grid-template-rows:repeat(12,1fr);
+            grid-row:9/-1;
+            // margin-top: 30px;
+            grid-column:4/-1;
+            background-color: pink;
+          } 
+       
+
 }
 
-// my mini bio
-  // &__mycontent{
-  //   grid-column: 8/17;
-  //   grid-row: 3/5;
-    
-  //   // @media only screen and (max-width: $xlarge) {
-  //   //   padding-left:60px; 
-  //   // } 
-
-  // }
-    
-  // &__mybio{
-  //   @media only screen and (max-width: $large) {
-  //     grid-row: 1/18; 
-  //     // display: 
-     
-  //   }  
+ 
   }
   
-  // ------------for menu extends the purple using container scss
-    //iPhone XR, XS Max-414px
-    // @media only screen and (max-width: $large) {
-    //   &__menubar{
-    //     background-color: $c-purple;
-    //     grid-column:1/col-end;
-    //     grid-row:1/1;
-    //     padding:10px 300px 10px 90px;
-   
-    //   }
-  // }
-// }
+ 
+}

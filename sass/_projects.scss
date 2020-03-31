@@ -1,4 +1,4 @@
-.Content{
+#Content{
   display:grid;
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
   // grid-template-rows:repeat(10, 1fr);
@@ -8,14 +8,17 @@
 }
 
 
-#webdev{
-  // grid-template-columns: repeat(6, minmax(min-content, 1fr));
-  // grid-template-rows:repeat(4, 1fr);
+.webdev{
   grid-column: 2/7;
-  // grid-row: 1/8;
   color:$c-black;
   font-size: 64px;
   line-height: 68px;
+ 
+  @media only screen and (max-width: 786px) {
+    grid-row:11/12;
+    grid-column:4/-1;
+    background-color: pink;
+  } 
 
   .web{
     border-bottom:40px;

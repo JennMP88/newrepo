@@ -15,11 +15,11 @@
   <div class="container2">
 
     <!-- Nav bar initials -->
-    <nav class="Navbar">
+    <div class="Navbar">
       <div class="Navbar__name">
-        JP | Home
+           <a href="#me"> JP|HOME </a> 
       </div>
-    </nav>
+    </div>
 
     <!-- Side nav -->
     <div class="Sidenav sticky">
@@ -29,10 +29,9 @@
 
       <div class="Sidenav__menubar">
         <ul>
-          <li>Projects </li>
-          <li>Resume </li>
-          <li>Technologies </li>
-          <li>Contact</li>
+          <li><a href="#Content">projects</a></li>
+          <li><a href="#Resume">resume</a></li>
+          <li><a href="#Contact">contact</a></li>
         </ul>
       </div>
 
@@ -44,7 +43,7 @@
     <div class="About">
       <div class="About__bio">
 
-        <img src="/assets/me.jpg" alt="" class="bio__me" />
+        <img src="/assets/me.jpg" alt="" id="me" />
 
         <div class="About__mycontent">
 
@@ -61,9 +60,9 @@
     
 
     <!-- Content for projects -->
-    <div class="Content">
+    <div id="Content">
 
-      <div id="webdev">
+      <div class="webdev">
         <p class="web">WEB DEVELOPMENT</p>
 
         <div class="switchit">
@@ -133,7 +132,9 @@
     </div>
 
     <!-- RESUME -->
-    <!-- <iframe src="https://drive.google.com/file/d/1TAnnGue_OmthenFmwYZQdJu4_iJ9u3UZ/preview" width="640" height="480"></iframe> -->
+    <!-- <div id="Resume">  
+    <iframe src="https://drive.google.com/file/d/1TAnnGue_OmthenFmwYZQdJu4_iJ9u3UZ/preview" width="640" height="480"></iframe>
+     </div>  -->
 
     <!-- mainsection -->
   </div>
