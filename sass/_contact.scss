@@ -1,0 +1,15 @@
+.Contact{
+  display:grid;
+  // grid-template-columns: repeat(8, minmax(max-content, 1fr));
+  // grid-template-rows:repeat(10, 1fr);
+  font-family: 'Bangers', cursive;
+  height: calc(100vh - 60px);
+  font-family: 'Bangers', cursive;
+  grid-column:2/7;
+
+
+ &__technologies{
+  grid-row:4/-1;
+ }
+
+}

@@ -8,8 +8,10 @@
   font-family: 'Bangers', cursive;
   
   @media only screen and (max-width: $xlarge) {
+    grid-template-rows:100px;
     grid-column:1/-1;
     grid-row:1/-1;
+    
   } 
  
 
@@ -17,16 +19,22 @@
     grid-column: 1/-1;
     grid-row: 1/6;
     min-width: 200px;
+    
+    @media only screen and (max-width: $xlarge) {
+      background-color: red;
+      grid-row:1/2;
+      display:none;
+    }
 
     & img{
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
-    @media only screen and (max-width: $xlarge) {
-     & img {
-       display: none;
-     }
+     
+      @media only screen and (max-width: $large) {
+        display:none;
+      }
+ 
     }
 
   }
@@ -38,26 +46,34 @@
     font-size:30px;
     min-width:200px;
     line-height: 75px; 
+    background-color: $c-purple;
+    
+    @media only screen and (max-width: $large) {
+      // height:10px;
+      background-color: white;
+      grid-row:2/3;
+      line-height: 44px;
+    }
 
     & ul {
       list-style-type:none;
-      background-color: $c-purple;
+      
+
+      @media only screen and (max-width: $large) {
+        display:flex;
+        justify-content: space-between;
+        background-color:white;
+        z-index:10;
+        
+    }
+
+    & ul li a:link {
       color: $c-yellow;
     }
 
   }
  
-  // displays the actual text and purple background for the navbar
 
-
-  // shows the time and temp
-  // &__timestamp{
-  //   grid-column: 2/7;
-  //   grid-row:8/9;
-  //   font-size:22px;
-
-    // @media only screen and (max-width: $large) {
-    //   visibility: hidden;
-    // }
 
   }
+}

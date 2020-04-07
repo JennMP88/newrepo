@@ -26,17 +26,17 @@ body {
   gap: 20px; }
   @media only screen and (max-width: 1280px) {
     .container2 {
-      grid-template-columns: repeat(12, minmax(min-content, 1fr));
-      grid-template-rows: repeat(10, 1fr); } }
+      grid-template-columns: repeat(12, minmax(min-content, 1fr)); } }
 
 .Mainsection {
+  grid-template-columns: 50px repeat(8, minmax(115px, 1fr)) 50px;
   grid-column: 4/-1;
+  grid-row: 1/-1;
   overflow: scroll;
   height: calc(100vh - 62px); }
   @media only screen and (max-width: 1280px) {
     .Mainsection {
       grid-template-columns: repeat(8, minmax(min-content, 1fr));
-      grid-template-rows: repeat(4, 1fr);
       grid-row: 5/8;
       grid-column: 3/-1; } }
   @media only screen and (max-width: 786px) {
@@ -50,9 +50,11 @@ body {
 .Navbar {
   display: grid;
   grid-column: 1/-1;
+  grid-row: 1/2;
   justify-content: end;
   font-family: 'Bangers', cursive;
-  background-color: white; }
+  background-color: white;
+  z-index: 1; }
   .Navbar__name {
     font-size: 40px;
     width: 150px; }
@@ -75,47 +77,68 @@ body {
   font-family: 'Bangers', cursive; }
   @media only screen and (max-width: 1280px) {
     .Sidenav {
+      grid-template-rows: 100px;
       grid-column: 1/-1;
       grid-row: 1/-1; } }
   .Sidenav__picture {
     grid-column: 1/-1;
     grid-row: 1/6;
     min-width: 200px; }
+    @media only screen and (max-width: 1280px) {
+      .Sidenav__picture {
+        background-color: red;
+        grid-row: 1/2;
+        display: none; } }
     .Sidenav__picture img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    @media only screen and (max-width: 1280px) {
-      .Sidenav__picture img {
-        display: none; } }
+      @media only screen and (max-width: 1024px) {
+        .Sidenav__picture img {
+          display: none; } }
   .Sidenav__menubar {
     grid-column: 2/-2;
     grid-row: 2/5;
     font-size: 30px;
     min-width: 200px;
-    line-height: 75px; }
+    line-height: 75px;
+    background-color: #9A2A7B; }
+    @media only screen and (max-width: 1024px) {
+      .Sidenav__menubar {
+        background-color: white;
+        grid-row: 2/3;
+        line-height: 44px; } }
     .Sidenav__menubar ul {
-      list-style-type: none;
-      background-color: #9A2A7B;
-      color: #BCB859; }
+      list-style-type: none; }
+      @media only screen and (max-width: 1024px) {
+        .Sidenav__menubar ul {
+          display: flex;
+          justify-content: space-between;
+          background-color: white;
+          z-index: 10; } }
+      .Sidenav__menubar ul ul li a:link {
+        color: #BCB859; }
 
 .About {
   display: grid;
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
   font-family: 'Bangers', cursive;
   height: calc(100vh - 60px);
-  /*100vh height of screen at time minus navbar of 68  height*/ }
+  /*100vh height of screen at time minus navbar of 68  height*/
+  padding-top: 62px; }
+  @media only screen and (max-width: 1024px) {
+    .About {
+      height: 800px;
+      z-index: -10;
+      padding-top: 100px; } }
   .About__bio {
     grid-column: 2/7;
     color: #BCB859;
-    font-size: 24px;
-    margin-top: 10px; }
+    font-size: 24px; }
     .About__bio img {
       width: 200px;
       object-fit: cover;
       border-radius: 100%; }
-      .About__bio img #me {
-        background-color: none; }
       @media only screen and (max-width: 393px) {
         .About__bio img {
           grid-row: 10/-1;
@@ -183,3 +206,12 @@ body {
 
 iframe {
   grid-column: 2/7; }
+
+.Contact {
+  display: grid;
+  font-family: 'Bangers', cursive;
+  height: calc(100vh - 60px);
+  font-family: 'Bangers', cursive;
+  grid-column: 2/7; }
+  .Contact__technologies {
+    grid-row: 4/-1; }

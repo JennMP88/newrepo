@@ -1,9 +1,12 @@
 .Navbar {
   display:grid;
   grid-column: 1/-1;  //from container
+  grid-row:1/2;
   justify-content: end;
   font-family: 'Bangers', cursive;
   background-color: white;
+  z-index: 1;
+  
 
   &__name{
     font-size:40px;

@@ -1,31 +1,31 @@
 .About {
   display:grid;
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
-  // grid-template-rows:repeat(10, 1fr);
   font-family: 'Bangers', cursive;
   height: calc(100vh - 60px); /*100vh height of screen at time minus navbar of 68  height*/
+  padding-top: 62px;
 
-
+  @media only screen and (max-width:$large){
+    height: 800px; 
+    z-index:-10;
+    padding-top:100px;
+  }
 //includes self image and bio 
   &__bio{
 
     grid-column: 2/7;
     color: $c-yellow;
     font-size: 24px;
-    margin-top: 10px;
+    // margin-top: 10px;
     
     //my image
     & img {
       width: 200px;
       object-fit: cover;
       border-radius: 100%;
-      
-   
+      // margin-top:32px;
 
-      #me{
-        background-color: none;
-      }
-
+     
            //size 393
            @media only screen and (max-width: $medium) {
             grid-row:10/-1;
