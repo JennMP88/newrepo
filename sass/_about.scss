@@ -1,23 +1,26 @@
 .About {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
-  font-family: 'Bangers', cursive;
-  height: calc(100vh - 60px); /*100vh height of screen at time minus navbar of 68  height*/
+  font-family: "Bangers", cursive;
+  height: calc(
+    100vh - 60px
+  ); /*100vh height of screen at time minus navbar of 68  height*/
   padding-top: 62px;
 
-  @media only screen and (max-width:$large){
-    height: 800px; 
-    z-index:-10;
-    padding-top:100px;
+  @media only screen and (max-width: $large) {
+    height: 800px;
+    z-index: -10;
+    padding-top: 100px;
   }
-//includes self image and bio 
-  &__bio{
 
+  //includes self image and bio
+  &__bio {
     grid-column: 2/7;
     color: $c-yellow;
     font-size: 24px;
     // margin-top: 10px;
-    
+   
+  
     //my image
     & img {
       width: 200px;
@@ -25,28 +28,25 @@
       border-radius: 100%;
       // margin-top:32px;
 
-     
-           //size 393
-           @media only screen and (max-width: $medium) {
-            grid-row:10/-1;
-            margin-top: 25px;
-            grid-column:5/-1;
-            background-color: yellow;
-          }
-          @media only screen and (max-width: 786px) {
-            // grid-template-columns: repeat(12, minmax(min-content,1fr)); 
-            // grid-template-rows:repeat(12,1fr);
-            grid-row:9/-1;
-            // margin-top: 30px;
-            grid-column:4/-1;
-            background-color: pink;
-          } 
-       
-
-}
-
- 
+      //size 393
+      @media only screen and (max-width: $medium) {
+        grid-row: 10/-1;
+        margin-top: 25px;
+        grid-column: 5/-1;
+        background-color: yellow;
+      }
+      @media only screen and (max-width: 786px) {
+        // grid-template-columns: repeat(12, minmax(min-content,1fr));
+        // grid-template-rows:repeat(12,1fr);
+        grid-row: 9/-1;
+        // margin-top: 30px;
+        grid-column: 4/-1;
+        background-color: pink;
+      }
+    }
+    &__myname{
+      color:E75E5E;
+    }
   }
-  
  
 }
