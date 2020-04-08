@@ -110,14 +110,15 @@ body {
         line-height: 44px; } }
     .Sidenav__menubar ul {
       list-style-type: none; }
+      .Sidenav__menubar ul li a {
+        color: #BCB859;
+        text-decoration: none; }
       @media only screen and (max-width: 1024px) {
         .Sidenav__menubar ul {
           display: flex;
           justify-content: space-between;
           background-color: white;
           z-index: 10; } }
-      .Sidenav__menubar ul ul li a:link {
-        color: #BCB859; }
 
 .About {
   display: grid;
@@ -133,7 +134,7 @@ body {
       padding-top: 100px; } }
   .About__bio {
     grid-column: 2/7;
-    color: #BCB859;
+    color: #000;
     font-size: 24px; }
     .About__bio img {
       width: 200px;
@@ -143,15 +144,14 @@ body {
         .About__bio img {
           grid-row: 10/-1;
           margin-top: 25px;
-          grid-column: 5/-1;
-          background-color: yellow; } }
+          grid-column: 5/-1; } }
       @media only screen and (max-width: 786px) {
         .About__bio img {
           grid-row: 9/-1;
-          grid-column: 4/-1;
-          background-color: pink; } }
-    .About__bio__myname {
-      color: E75E5E; }
+          grid-column: 4/-1; } }
+    .About__bio .mybio span.red {
+      color: #E75E5E;
+      font-size: 32px; }
 
 #Content {
   display: grid;
@@ -228,4 +228,6 @@ iframe {
   font-family: 'Bangers', cursive;
   grid-column: 2/7; }
   .Contact__technologies {
-    grid-column: 2/7; }
+    grid-column: 4/-1; }
+  .Contact form {
+    grid-column: 2/4; }

@@ -16,24 +16,21 @@
   //includes self image and bio
   &__bio {
     grid-column: 2/7;
-    color: $c-yellow;
+    color: $c-black;
     font-size: 24px;
-    // margin-top: 10px;
-   
-  
+
     //my image
     & img {
       width: 200px;
       object-fit: cover;
       border-radius: 100%;
-      // margin-top:32px;
 
       //size 393
       @media only screen and (max-width: $medium) {
         grid-row: 10/-1;
         margin-top: 25px;
         grid-column: 5/-1;
-        background-color: yellow;
+        // background-color: yellow;
       }
       @media only screen and (max-width: 786px) {
         // grid-template-columns: repeat(12, minmax(min-content,1fr));
@@ -41,12 +38,14 @@
         grid-row: 9/-1;
         // margin-top: 30px;
         grid-column: 4/-1;
-        background-color: pink;
+        // background-color: pink;
       }
     }
-    &__myname{
-      color:E75E5E;
+    .mybio {
+      span.red {
+        color: #E75E5E;
+        font-size:32px;
+      }
     }
   }
- 
 }

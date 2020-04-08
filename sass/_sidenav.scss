@@ -55,9 +55,16 @@
       line-height: 44px;
     }
 
+
     & ul {
       list-style-type:none;
       
+      li{
+        a{
+          color: $c-yellow;
+          text-decoration: none;
+        }
+      }
 
       @media only screen and (max-width: $large) {
         display:flex;
@@ -67,12 +74,20 @@
         
     }
 
-    & ul li a:link {
-      color: $c-yellow;
-    }
+   
 
   }
+
  
+      
+
+  //     @media only screen and (max-width: $large) {
+  //       display:flex;
+  //       justify-content: space-between;
+  //       background-color:white;
+  //       z-index:10;
+        
+  //   }
 
 
   }
