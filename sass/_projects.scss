@@ -1,74 +1,65 @@
-#Content{
-  display:grid;
+#Content {
+  display: grid;
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
-  font-family: 'Bangers', cursive;
+  // grid-template-rows:  repeat(10, min-content);
+  font-family: "Bangers", cursive;
   height: calc(100vh - 60px);
-  font-family: 'Bangers', cursive;
-}
 
-
-.webdev{
-  grid-template-columns: repeat(8, minmax(max-content, 1fr));
-  grid-template-rows:  repeat(10, min-content);
-  grid-column: 2/7;
-  color:$c-black;
-  font-size: 64px;
-  line-height: 68px;
  
-  @media only screen and (max-width: 786px) {
-    grid-row:11/12;
-    grid-column:4/-1;
-    background-color: pink;
-  } 
-
-  .web{
-    border-bottom:40px;
-    border-bottom-color: $c-red;
-    border-bottom-style: solid;
-    border-bottom-width: thick; 
+  .Webdev {
+    // grid-template-columns: repeat(8, minmax(max-content, 1fr));
+    // grid-template-rows:  repeat(10, min-content);
+    grid-column: 2/7;
+    color: $c-black;
     font-size: 64px;
     line-height: 68px;
-  }
 
-  .titles{
-    font-size: 50px;
+    // @media only screen and (max-width: 786px) {
+    //   grid-row:11/12;
+    //   grid-column:4/-1;
+    //   background-color: pink;
+    // }
+
+    .web {
+      border-bottom: 40px;
+      border-bottom-color: $c-red;
+      border-bottom-style: solid;
+      border-bottom-width: thick;
+      font-size: 64px;
+      line-height: 68px;
+    }
+
+
+    &__switchit {
+      font-size: 24px;
+      line-height: 26px;
+      color: $c-black;
+    }
+
+    &__bikes {
+      font-size: 24px;
+      line-height: 26px;
+      color: $c-black;
+      
+      
+    }
+
+    .titles {
+      font-size: 50px;
       line-height: 53px;
-      color:$c-yellow;
-  }
-  .switchit{
-    font-size: 24px;
-    line-height: 26px; 
-    color:$c-black;
-    
-  }
+      color: $c-yellow;
+    }
 
-  .bikes{
-    font-size: 24px;
-    line-height: 26px;
-    color:$c-black;
-  }
-
-  .tvshows{
-    font-size: 24px;
-    line-height: 26px;
-    color:$c-black;
-  }
-  button{
-    padding:20px;
-    border-radius: 2px;
-    margin:40px;
-    font-size: 12px;
-  }
-
-  .buttonstyle{
-    width: 300px;
-    height: 100px;
-    padding:10px;
-    margin-right:10px;
-    border-radius: .1em;
-    background-color: $c-yellow;
-    color: $c-red;
-    border: 4px solid $c-black;
-    text-decoration: none;
+    .buttonstyle {
+      width: 300px;
+      height: 100px;
+      padding: 10px;
+      margin-right: 10px;
+      border-radius: 0.1em;
+      background-color: $c-yellow;
+      color: $c-red;
+      border: 4px solid $c-black;
+      text-decoration: none;
+    }
   }
 }

@@ -3,11 +3,14 @@
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
   font-family: 'Bangers', cursive;
   height: calc(100vh - 60px);
-  font-family: 'Bangers', cursive;
+  
+  
+
+  iframe{
+    grid-column: 2/7;
+  }
 
 }
 
-iframe{
-  grid-column: 2/7;
-}
+
 

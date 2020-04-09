@@ -11,6 +11,11 @@
   &__name{
     font-size:40px;
     width:150px;
+
+    a{
+      text-decoration: none;
+      color:$c-yellow;
+    }
   }
 
   //size 1280

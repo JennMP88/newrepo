@@ -1,94 +1,110 @@
-
 .Sidenav {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(6, minmax(20px, 1fr));
-  grid-template-rows:repeat(10, 100px);
-  grid-column:2/4; //location accoring to container2
-  
-  font-family: 'Bangers', cursive;
-  
-  @media only screen and (max-width: $xlarge) {
-    grid-template-rows:100px;
-    grid-column:1/-1;
-    grid-row:1/-1;
-    
-  } 
- 
+  grid-template-rows: repeat(10, 100px);
+  grid-column: 2/4; //location accoring to container2
+
+  font-family: "Bangers", cursive;
+
+  // @media only screen and (max-width: $xlarge) {
+  //   grid-template-rows: 100px;
+  //   grid-column: 1/-1;
+  //   grid-row: 1/-1;
+  // }
 
   &__picture {
     grid-column: 1/-1;
     grid-row: 1/6;
     min-width: 200px;
-    
-    @media only screen and (max-width: $xlarge) {
-      background-color: red;
-      grid-row:1/2;
-      display:none;
-    }
 
-    & img{
+    // @media only screen and (max-width: $xlarge) {
+    //   background-color: red;
+    //   grid-row: 1/2;
+    //   display: none;
+    // }
+
+    & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-     
-      @media only screen and (max-width: $large) {
-        display:none;
-      }
- 
-    }
 
+      @media only screen and (max-width: $large) {
+        display: none;
+      }
+    }
   }
 
   //side navbar including image
   &__menubar {
     grid-column: 2/-2;
     grid-row: 2/5;
-    font-size:30px;
-    min-width:200px;
-    line-height: 75px; 
+    font-size: 30px;
+    min-width: 200px;
+    line-height: 75px;
     background-color: $c-purple;
-    
-    @media only screen and (max-width: $large) {
-      // height:10px;
-      background-color: white;
-      grid-row:2/3;
-      line-height: 44px;
-    }
 
+    // &__menubar:after{
+    //   position:absolute;
+    //   width:100%;
+    //   height:100%;
+    // content: '';
+    //   background:inherit;
+    //   top:0;
+    //   right:0;
+    //   bottom:0;
+    //   left:0;
+    //   transform-origin: top right;
+    //   transform:skewY(4deg);
+    // }
+
+    // position:absolute;
+    // width:100%;
+    // height:100%;
+    // content:'';
+    // background:inherit;
+    // top:0;
+    // right:0;
+    // bottom:0;
+    // left:0;
+    // transform-origin: top left;
+    // transform:skewY(4deg);
+
+    // @media only screen and (max-width: $large) {
+    //   background-color: white;
+    //   grid-row: 2/3;
+    //   line-height: 44px;
+    // }
 
     & ul {
-      list-style-type:none;
-      
-      li{
-        a{
+      list-style-type: none;
+
+      li {
+        a {
           color: $c-yellow;
           text-decoration: none;
         }
       }
 
-      @media only screen and (max-width: $large) {
-        display:flex;
-        justify-content: space-between;
-        background-color:white;
-        z-index:10;
-        
+      // @media only screen and (max-width: $large) {
+      //   display: flex;
+      //   justify-content: space-between;
+      //   background-color: white;
+      //   z-index: 10;
+      // }
+
+      // @media only screen and (max-width: $large) {
+      //   display: flex;
+      //   justify-content: space-between;
+      //   background-color: white;
+      //   z-index: 10;
+      // }
     }
 
-   
-
-  }
-
- 
-      
-
-  //     @media only screen and (max-width: $large) {
-  //       display:flex;
-  //       justify-content: space-between;
-  //       background-color:white;
-  //       z-index:10;
-        
-  //   }
-
-
+    @media only screen and (max-width: $large) {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      z-index: 10;
+    }
   }
 }

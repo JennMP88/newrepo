@@ -7,11 +7,11 @@
   ); /*100vh height of screen at time minus navbar of 68  height*/
   padding-top: 62px;
 
-  @media only screen and (max-width: $large) {
-    height: 800px;
-    z-index: -10;
-    padding-top: 100px;
-  }
+  // @media only screen and (max-width: $large) {
+  //   height: 800px;
+  //   z-index: -10;
+  //   padding-top: 100px;
+  // }
 
   //includes self image and bio
   &__bio {
@@ -43,8 +43,8 @@
     }
     .mybio {
       span.red {
-        color: #E75E5E;
-        font-size:32px;
+        color: $c-red;
+        font-size: 32px;
       }
     }
   }
