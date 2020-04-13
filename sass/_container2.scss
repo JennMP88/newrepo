@@ -5,6 +5,7 @@
   grid-template-rows:repeat(20, min-content);
   height:100vh; //whole viewing space
   gap:20px;
+ 
 
   // @media only screen and (max-width: $xlarge) {
   //   grid-template-columns: repeat(12, minmax(min-content,1fr)); 
@@ -20,6 +21,7 @@
   grid-row:1/-1;
   overflow:scroll;
   height:calc(100vh - 62px);
+  // background-color:$c-yellow;
   
 
   // @media only screen and (max-width: $xlarge) {

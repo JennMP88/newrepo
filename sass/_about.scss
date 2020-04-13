@@ -18,6 +18,14 @@
     grid-column: 2/7;
     color: $c-black;
     font-size: 24px;
+    // color: white;
+    // text-shadow:
+    //     3px 3px 0 #000,
+    //   -1px -1px 0 #000,  
+    //    1px -1px 0 #000,
+    //    -1px 1px 0 #000,
+    //     1px 1px 0 #000;
+  
 
     //my image
     & img {
@@ -45,6 +53,12 @@
       span.red {
         color: $c-red;
         font-size: 32px;
+        // text-shadow:
+        //     3px 3px 0 #000,
+        //   -1px -1px 0 #000,  
+        //    1px -1px 0 #000,
+        //    -1px 1px 0 #000,
+        //     1px 1px 0 #000;
       }
     }
   }
