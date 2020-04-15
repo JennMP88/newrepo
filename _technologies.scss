@@ -1,9 +1,7 @@
-#Resume{
+#Technologies{
   font-family: 'Bangers', cursive;
-  height: 900px;
   padding-bottom: 80px;
-
-  .resumeline{
+  .techs{
     border-bottom: 40px;
     border-bottom-color: $c-red;
     border-bottom-style: solid;
@@ -12,8 +10,5 @@
     line-height: 68px;
     width:500px;
   }
-
+ 
 }
-
-
-

@@ -1,11 +1,11 @@
 .About {
   display: grid;
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
+  grid-column:1/-1;
   font-family: "Bangers", cursive;
   height: calc(
     100vh - 60px
-  ); /*100vh height of screen at time minus navbar of 68  height*/
-  padding-top: 62px;
+  ); 
 
   // @media only screen and (max-width: $large) {
   //   height: 800px;
@@ -15,16 +15,9 @@
 
   //includes self image and bio
   &__bio {
-    grid-column: 2/7;
+    grid-column: 1/-1;
     color: $c-black;
     font-size: 24px;
-    // color: white;
-    // text-shadow:
-    //     3px 3px 0 #000,
-    //   -1px -1px 0 #000,  
-    //    1px -1px 0 #000,
-    //    -1px 1px 0 #000,
-    //     1px 1px 0 #000;
   
 
     //my image
@@ -38,27 +31,17 @@
         grid-row: 10/-1;
         margin-top: 25px;
         grid-column: 5/-1;
-        // background-color: yellow;
       }
       @media only screen and (max-width: 786px) {
-        // grid-template-columns: repeat(12, minmax(min-content,1fr));
-        // grid-template-rows:repeat(12,1fr);
         grid-row: 9/-1;
-        // margin-top: 30px;
         grid-column: 4/-1;
-        // background-color: pink;
       }
     }
     .mybio {
       span.red {
         color: $c-red;
         font-size: 32px;
-        // text-shadow:
-        //     3px 3px 0 #000,
-        //   -1px -1px 0 #000,  
-        //    1px -1px 0 #000,
-        //    -1px 1px 0 #000,
-        //     1px 1px 0 #000;
+    
       }
     }
   }

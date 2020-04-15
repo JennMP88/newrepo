@@ -1,19 +1,16 @@
-.Contact{
-  display:grid;
-  // grid-template-columns: repeat(8, minmax(max-content, 1fr));
-  // grid-template-rows:repeat(10, 1fr);
+#Contact{
   font-family: 'Bangers', cursive;
-  height: calc(100vh - 60px);
   font-family: 'Bangers', cursive;
-  grid-column:2/7;
 
-
- &__technologies{
-  grid-column:2/7;
- }
-
- & form{
-  grid-column: 2/4;
- }
+  
+  .info{
+    border-bottom: 40px;
+    border-bottom-color: $c-red;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    font-size: 64px;
+    line-height: 68px;
+    width:500px;
+  }  
 
 }

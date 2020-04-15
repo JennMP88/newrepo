@@ -1,19 +1,14 @@
 #Content {
-  display: grid;
-  grid-template-columns: repeat(8, minmax(max-content, 1fr));
-  // grid-template-rows:  repeat(10, min-content);
+
   font-family: "Bangers", cursive;
-  height: calc(100vh - 60px);
+
 
  
   .Webdev {
-    // grid-template-columns: repeat(8, minmax(max-content, 1fr));
-    // grid-template-rows:  repeat(10, min-content);
-    grid-column: 2/7;
+
     color: $c-black;
     font-size: 64px;
     line-height: 68px;
-
     // @media only screen and (max-width: 786px) {
     //   grid-row:11/12;
     //   grid-column:4/-1;
@@ -27,6 +22,7 @@
       border-bottom-width: thick;
       font-size: 64px;
       line-height: 68px;
+      width:500px;
     }
 
 
