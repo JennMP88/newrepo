@@ -3,15 +3,7 @@
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
   grid-column:1/-1;
   font-family: "Bangers", cursive;
-  height: calc(
-    100vh - 60px
-  ); 
-
-  // @media only screen and (max-width: $large) {
-  //   height: 800px;
-  //   z-index: -10;
-  //   padding-top: 100px;
-  // }
+  height: 600px; 
 
   //includes self image and bio
   &__bio {
@@ -19,23 +11,15 @@
     color: $c-black;
     font-size: 24px;
   
-
+  @media only screen and (max-width: $large) {
+    height:700px;
+  }
     //my image
     & img {
       width: 200px;
       object-fit: cover;
       border-radius: 100%;
 
-      //size 393
-      @media only screen and (max-width: $medium) {
-        grid-row: 10/-1;
-        margin-top: 25px;
-        grid-column: 5/-1;
-      }
-      @media only screen and (max-width: 786px) {
-        grid-row: 9/-1;
-        grid-column: 4/-1;
-      }
     }
     .mybio {
       span.red {
