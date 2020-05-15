@@ -11,20 +11,30 @@
     width:500px;
   }  
   .info{
-    width: 60%;
-    margin: 16px auto;
+    width: 80%;
+    margin: 86px auto;
     border: 1px solid #eee;
-    box-shadow:0 2px 3px #ccc;
-    padding:16px;
-    // text-align:center;
+    box-shadow:0 2px 3px grey;
+    padding:32px;
+    font-size:22px;
 
     .messageBox{
-      // background-color: yellow;
-      padding: 65px;
+      margin-left:20px;
+      height:230px;
+      width:450px;
     }
 
-    .email{
-      width:200px;
+    .formbox{
+      width:250px;
+      height:25px;
+    }
+
+
+    .buttonstyling{
+      display:flex;
+      padding:8px;
+      border-radius: 1em;
+      justify-content: end;
     }
   }
 

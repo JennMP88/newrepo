@@ -176,16 +176,24 @@ body {
     line-height: 68px;
     width: 500px; }
   #Contact .info {
-    width: 60%;
-    margin: 16px auto;
+    width: 80%;
+    margin: 86px auto;
     border: 1px solid #eee;
-    box-shadow: 0 2px 3px #ccc;
-    padding: 16px; }
+    box-shadow: 0 2px 3px grey;
+    padding: 32px;
+    font-size: 22px; }
     #Contact .info .messageBox {
-      background-color: yellow;
-      padding: 65px; }
-    #Contact .info .email {
-      width: 200px; }
+      margin-left: 20px;
+      height: 230px;
+      width: 450px; }
+    #Contact .info .formbox {
+      width: 250px;
+      height: 25px; }
+    #Contact .info .buttonstyling {
+      display: flex;
+      padding: 8px;
+      border-radius: 1em;
+      justify-content: end; }
 
 #Technologies {
   font-family: 'Bangers', cursive;
