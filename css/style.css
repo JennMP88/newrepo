@@ -166,9 +166,8 @@ body {
     width: 500px; }
 
 #Contact {
-  font-family: 'Bangers', cursive;
   font-family: 'Bangers', cursive; }
-  #Contact .info {
+  #Contact .headlinecontact {
     border-bottom: 40px;
     border-bottom-color: #E75E5E;
     border-bottom-style: solid;
@@ -176,6 +175,17 @@ body {
     font-size: 64px;
     line-height: 68px;
     width: 500px; }
+  #Contact .info {
+    width: 60%;
+    margin: 16px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 16px; }
+    #Contact .info .messageBox {
+      background-color: yellow;
+      padding: 65px; }
+    #Contact .info .email {
+      width: 200px; }
 
 #Technologies {
   font-family: 'Bangers', cursive;
