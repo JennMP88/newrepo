@@ -1,9 +1,7 @@
 #Contact{
   font-family: 'Bangers', cursive;
-  font-family: 'Bangers', cursive;
-
   
-  .info{
+  .headlinecontact{
     border-bottom: 40px;
     border-bottom-color: $c-red;
     border-bottom-style: solid;
@@ -12,5 +10,24 @@
     line-height: 68px;
     width:500px;
   }  
+  .info{
+    width: 60%;
+    margin: 16px auto;
+    border: 1px solid #eee;
+    box-shadow:0 2px 3px #ccc;
+    padding:16px;
+    // text-align:center;
+
+    .messageBox{
+      // background-color: yellow;
+      padding: 65px;
+    }
+
+    .email{
+      width:200px;
+    }
+  }
+
+
 
 }
