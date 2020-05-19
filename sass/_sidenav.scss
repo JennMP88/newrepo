@@ -10,18 +10,26 @@
   @media only screen and (max-width: $medium) {
       grid-column:1/-1;
       grid-row:2/3;
+      grid-template-rows: 20px 60px 20px; //3 rows
+      height:auto;
   }
+
 
   &__picture {
     grid-column: 1/-1;
     grid-row: 1/6;
     min-width: 200px;
+ 
+
+  @media only screen and (max-width: $medium) {
+    grid-row:1/-1;
+    
+}
 
     & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-
     }
   }
 
@@ -37,11 +45,21 @@
     @media only screen and (max-width: $large) {
       grid-column:1/-1;
     }
+    @media only screen and (max-width: $medium) {
+      grid-row:2/3;
+      grid-column:2/-2;
+  }
    
 
     & ul {
       list-style-type: none;
 
+      @media only screen and (max-width: $medium) {
+        display:flex;
+        justify-content: space-around;
+        margin:0;
+        padding:0;
+      }
       li {
         a {
           color: $c-yellow;
@@ -50,6 +68,7 @@
       }
 
     }
+    
 
   }
 }
