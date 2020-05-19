@@ -19,9 +19,9 @@
     font-size:22px;
 
     .messageBox{
-      margin-left:20px;
       height:230px;
-      width:450px;
+      min-width:250px;
+      width:100%; 
     }
 
     .formbox{

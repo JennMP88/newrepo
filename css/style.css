@@ -135,6 +135,10 @@ body {
       font-size: 24px;
       line-height: 26px;
       color: #000; }
+    #Content .Webdev__coursecatalog {
+      font-size: 24px;
+      line-height: 26px;
+      color: #000; }
     #Content .Webdev .titles {
       font-size: 50px;
       line-height: 53px;
@@ -183,9 +187,9 @@ body {
     padding: 32px;
     font-size: 22px; }
     #Contact .info .messageBox {
-      margin-left: 20px;
       height: 230px;
-      width: 450px; }
+      min-width: 250px;
+      width: 100%; }
     #Contact .info .formbox {
       width: 250px;
       height: 25px; }
