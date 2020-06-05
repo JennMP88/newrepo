@@ -5,7 +5,7 @@
   grid-column: 2/4; //location accoring to container2
   font-family: "Bangers", cursive;
   height:calc(100vh - 42px);
-
+ 
 
   @media only screen and (max-width: $medium) {
       grid-column:1/-1;
@@ -40,14 +40,18 @@
     font-size: 30px;
     min-width: 200px;
     line-height: 55px;
-    background-color: $c-purple;
+    background-color:purple;
+   
+    
 
     @media only screen and (max-width: $large) {
       grid-column:1/-1;
+  
     }
     @media only screen and (max-width: $medium) {
       grid-row:2/3;
       grid-column:2/-2;
+     
   }
    
 
