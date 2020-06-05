@@ -1,6 +1,11 @@
 #Technologies{
+  display: grid;
+  grid-template-columns: repeat(8, minmax(max-content, 1fr));
+  grid-template-rows: repeat(6, minmax(max-content, 1fr));
+  grid-column:1/-1;
   font-family: 'Bangers', cursive;
   padding-bottom: 80px;
+  
   .techs{
     border-bottom: 40px;
     border-bottom-color: $c-red;
@@ -10,10 +15,11 @@
     line-height: 68px;
     width:500px;
   }
- 
 }
 
 svg{
-  height: 60px;
+  grid-column: 1/-1;
+  height: 75px;
+  
 
 }

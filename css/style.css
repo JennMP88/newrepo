@@ -235,6 +235,9 @@ body {
       text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
 #Technologies {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(max-content, 1fr));
+  grid-template-rows: repeat(6, minmax(max-content, 1fr));
   font-family: 'Bangers', cursive;
   padding-bottom: 80px; }
   #Technologies .techs {
@@ -247,4 +250,5 @@ body {
     width: 500px; }
 
 svg {
-  height: 150px; }
+  grid-column: 1/-1;
+  height: 75px; }
