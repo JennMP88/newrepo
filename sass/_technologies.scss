@@ -1,5 +1,8 @@
 #Technologies{
-  
+  display: grid;
+  grid-template-columns: repeat(8, minmax(max-content, 1fr));
+  grid-template-rows: repeat(6, minmax(max-content, 1fr));
+  grid-column:1/-1;
   font-family: 'Bangers', cursive;
   padding-bottom: 80px;
   
@@ -12,51 +15,11 @@
     line-height: 68px;
     width:500px;
   }
-
-  .tech2{
-    display: grid;
-    grid-template-columns: repeat(8, minmax(max-content, 1fr));
-    grid-template-rows: repeat(9);
-    grid-column:1/-1;
-    padding-bottom: 20px;
-    
-    &_svgThird1{
-      grid-column: 1/3;
-      grid-row:1/2;
-      height: 75px;
-    }
-    
-
-    &_svgThird2{
-      grid-column: 3/6;
-      grid-row:1/2;
-      height: 75px;
-      
-    }
-    &_svgThird3{
-      grid-column: 6/9;
-      grid-row:1/2;
-       grid-row:1/2; 
-    }
-    &_svgThird4{
-      grid-column: 1/3;
-      grid-row:4/6;
-      height: 75px;
-    }
-    &_svgThird5{
-      grid-column: 3/6;
-      grid-row:4/6;
-      height: 75px;
-    }
-    &_svgThird6{
-      grid-column: 6/9;
-      grid-row:4/6;
-      height: 75px;
-    }
-
-  }
-
 }
 
+svg{
+  grid-column: 1/-1;
+  height: 75px;
+  
 
-
+}
