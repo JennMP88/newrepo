@@ -378,7 +378,23 @@ body {
       #Technologies h3 {
         max-width: 300px; }
       #Technologies .tech2 {
-        max-width: 300px; } }
+        max-width: 300px; }
+      #Technologies_three {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        padding-left: 60px; }
+      #Technologies .threes {
+        grid-column: 2/3;
+        grid-row: 6/7;
+        padding-left: 60px; }
+      #Technologies_four {
+        grid-column: 2/3;
+        grid-row: 7/8;
+        padding-left: 60px; }
+      #Technologies .fourth {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: 60px; } }
 
 svg {
   height: 100px; }
