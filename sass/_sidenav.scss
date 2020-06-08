@@ -17,7 +17,7 @@
   // this
   @media only screen and (max-width: $small) {   
     grid-column:1/6;
-    grid-template-rows: repeat(2,minmax(10px,1fr));
+    grid-template-rows: repeat(1,minmax(10px,1fr));
     
   }
 

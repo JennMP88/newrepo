@@ -144,25 +144,68 @@
       margin-left:20px;
       padding-bottom:17px;
     }
-    .four{
+    .tech2_two{
       grid-column:2/3;
-      grid-row:5/6;
-      padding-left:60px;
-    }
-    .fourth{
-      grid-column:2/3;
-      grid-row:6/7;
-      padding-left:75px;
-    }
-    .eight{
-      grid-column:4/5;
-      grid-row:5/6;
+      grid-row:1/2;
       padding-left:30px;
     }
-    .eighth{
+    .tech2 .twos{
+      grid-column:2/3;
+      grid-row:2/3;
+      padding-left:60px;
+    }
+    .tech2_three{
+      grid-column:4/5;
+      grid-row:1/3;
+      padding-left:10px;
+    }
+    .tech2 .threes{
+      grid-column:4/5;
+      grid-row:2/3;
+      padding-left:35px;
+    }
+
+    .tech2_four{
+      grid-column:2/3;
+      grid-row:5/6;
+      padding-left:40px;
+    }
+    .tech2 .fourth{
+      grid-column:2/3;
+      grid-row:6/7;
+      padding-left:45px;
+    }
+
+    .tech2_six{
+      grid-column:2/3;
+      grid-row:3/4;
+      padding-left:30px;
+    }
+    .tech2 .sixth{
+      grid-column:2/3;
+      grid-row:4/4;
+      padding-left:30px;
+    }
+    .tech2_seven{
+      grid-column:4/5;
+      grid-row:3/4;
+      padding-left:10px;
+    }
+    .tech2 .seventh{
+      grid-column:4/5;
+      grid-row:4/4;
+      padding-left:30px;
+    }
+
+    .tech2_eight{
+      grid-column:4/5;
+      grid-row:5/6;
+      padding-left:10px;
+    }
+    .tech2 .eighth{
       grid-column:4/5;
       grid-row:6/7;
-      padding-left:60px;
+      padding-left:35px;
     }
 
   }
