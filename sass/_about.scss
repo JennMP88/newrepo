@@ -1,6 +1,7 @@
 .About {
   display: grid;
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
+  grid-template-rows: repeat(8, minmax(max-content, 1fr));
   grid-column:1/-1;
   font-family: "Bangers", cursive;
   height: 700px; 
@@ -9,6 +10,7 @@
   //includes self image and bio
   &__bio {
     grid-column: 1/-1;
+    grid-row: 2/-1;
     color: $c-black;
     font-size: 24px;
   
