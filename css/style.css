@@ -63,6 +63,11 @@ body {
     .Navbar__name a {
       text-decoration: none;
       color: #E75E5E; }
+  @media only screen and (max-width: 667px) {
+    .Navbar {
+      justify-content: center;
+      background-color: #003;
+      border-bottom: 3px solid pink; } }
 
 .Sidenav {
   display: grid;
@@ -80,7 +85,7 @@ body {
   @media only screen and (max-width: 667px) {
     .Sidenav {
       grid-column: 1/6;
-      grid-template-rows: repeat(2, minmax(10px, 1fr)); } }
+      grid-template-rows: repeat(1, minmax(0px, 1fr)); } }
   .Sidenav__picture {
     grid-column: 1/-1;
     grid-row: 1/6;
@@ -113,8 +118,10 @@ body {
         grid-column: 2/-2; } }
     @media only screen and (max-width: 667px) {
       .Sidenav__menubar {
-        grid-template-rows: repeat(6, minmax(20px, 1fr));
-        grid-column: 1/-1; } }
+        grid-column: 1/-1;
+        display: grid;
+        justify-content: center;
+        background-color: #003; } }
     .Sidenav__menubar ul {
       list-style-type: none; }
       @media only screen and (max-width: 900px) {
@@ -230,8 +237,8 @@ body {
       #Resume h3 {
         max-width: 300px; }
       #Resume iframe {
-        max-width: 370px;
-        height: 500px; } }
+        max-width: 320px;
+        height: 420px; } }
 
 #Contact {
   font-family: 'Bangers', cursive; }
@@ -385,22 +392,54 @@ body {
         height: 8px;
         margin-left: 20px;
         padding-bottom: 17px; }
-      #Technologies .four {
+      #Technologies .tech2_two {
         grid-column: 2/3;
-        grid-row: 5/6;
-        padding-left: 60px; }
-      #Technologies .fourth {
-        grid-column: 2/3;
-        grid-row: 6/7;
-        padding-left: 75px; }
-      #Technologies .eight {
-        grid-column: 4/5;
-        grid-row: 5/6;
+        grid-row: 1/2;
         padding-left: 30px; }
-      #Technologies .eighth {
+      #Technologies .tech2 .twos {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: 60px; }
+      #Technologies .tech2_three {
+        grid-column: 4/5;
+        grid-row: 1/3;
+        padding-left: 10px; }
+      #Technologies .tech2 .threes {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        padding-left: 35px; }
+      #Technologies .tech2_four {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        padding-left: 40px; }
+      #Technologies .tech2 .fourth {
+        grid-column: 2/3;
+        grid-row: 6/7;
+        padding-left: 45px; }
+      #Technologies .tech2_six {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-left: 30px; }
+      #Technologies .tech2 .sixth {
+        grid-column: 2/3;
+        grid-row: 4/4;
+        padding-left: 30px; }
+      #Technologies .tech2_seven {
+        grid-column: 4/5;
+        grid-row: 3/4;
+        padding-left: 10px; }
+      #Technologies .tech2 .seventh {
+        grid-column: 4/5;
+        grid-row: 4/4;
+        padding-left: 30px; }
+      #Technologies .tech2_eight {
+        grid-column: 4/5;
+        grid-row: 5/6;
+        padding-left: 10px; }
+      #Technologies .tech2 .eighth {
         grid-column: 4/5;
         grid-row: 6/7;
-        padding-left: 60px; } }
+        padding-left: 35px; } }
 
 svg {
   height: 100px; }
