@@ -79,10 +79,15 @@
     }
   }
 
-  // @media only screen and (max-width: $small) {   
-  //   grid-column:1/5;
-  
-  // }
+  @media only screen and (max-width: $small) {   
+    grid-template-columns: repeat(8, minmax(max-content, 1fr));
+    // grid-column:1/8;
+    max-width: 300px;
+    h3{
+      max-width: 300px;
+    }
+  }
+
 }
 .webdevprojects{
   margin-bottom:100px;
