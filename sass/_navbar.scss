@@ -18,6 +18,13 @@
     }
   }
 
+  @media only screen and (max-width: $small) {   
+    justify-content: center;
+    background-color: #003;
+    border-bottom: 3px solid pink;
+    
+  }
+
   
 }
 
