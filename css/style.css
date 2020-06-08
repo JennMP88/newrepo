@@ -137,7 +137,7 @@ body {
   grid-column: 1/-1;
   font-family: "Bangers", cursive;
   height: 700px;
-  max-width: 375px; }
+  max-width: 740px; }
   .About__bio {
     grid-column: 1/-1;
     color: #000;
@@ -224,6 +224,14 @@ body {
     font-size: 64px;
     line-height: 68px;
     width: 500px; }
+  @media only screen and (max-width: 667px) {
+    #Resume {
+      max-width: 300px; }
+      #Resume h3 {
+        max-width: 300px; }
+      #Resume iframe {
+        max-width: 370px;
+        height: 500px; } }
 
 #Contact {
   font-family: 'Bangers', cursive; }
@@ -248,7 +256,7 @@ body {
     font-size: 22px; }
     #Contact .info .messageBox {
       height: 230px;
-      min-width: 250px;
+      max-width: 250px;
       width: 100%; }
     #Contact .info .formbox {
       width: 250px;
@@ -268,6 +276,15 @@ body {
       text-decoration: none;
       font-family: "Bangers", cursive;
       text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+  @media only screen and (max-width: 667px) {
+    #Contact {
+      max-width: 300px; }
+      #Contact h3 {
+        max-width: 300px; }
+      #Contact form {
+        max-width: 370px; }
+      #Contact .formbox {
+        max-width: 170px; } }
 
 #Technologies {
   grid-column: 1/-1;
@@ -354,6 +371,14 @@ body {
       grid-column: 1/2;
       grid-row: 6/7;
       padding-left: 10px; }
+  @media only screen and (max-width: 667px) {
+    #Technologies {
+      grid-template-columns: repeat(8, minmax(max-content, 1fr));
+      max-width: 300px; }
+      #Technologies h3 {
+        max-width: 300px; }
+      #Technologies .tech2 {
+        max-width: 300px; } }
 
 svg {
   height: 100px; }

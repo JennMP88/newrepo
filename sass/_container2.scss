@@ -39,7 +39,6 @@
   }
 
   @media only screen and (max-width: $small) {   
-   // grid-template-rows: repeat(10,minmax(10px,1fr));
     grid-column: 1/-1;
     padding-left:20px;
   }

@@ -12,7 +12,18 @@
     line-height: 68px;
     width:500px;
   }
+  @media only screen and (max-width: $small) {   
+    max-width: 300px;
+    h3{
+      max-width: 300px;
+    }
+    iframe{
+      max-width:370px;
+      height: 500px;
 
+    }
+  }
+  
 }
 
 
