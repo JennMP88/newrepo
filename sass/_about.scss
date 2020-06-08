@@ -3,7 +3,8 @@
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
   grid-column:1/-1;
   font-family: "Bangers", cursive;
-  height: 600px; 
+  height: 700px; 
+  max-width: 375px;
 
   //includes self image and bio
   &__bio {
@@ -19,7 +20,7 @@
   }
   @media only screen and (max-width: $small) { 
     grid-row:1/-1;
-    grid-column:1/-1;
+    grid-column:1/8;
   }
     //my image
     & img {

@@ -46,7 +46,6 @@ body {
       grid-column: 1/-1; } }
   @media only screen and (max-width: 667px) {
     .Mainsection {
-      grid-template-rows: repeat(20, minmax(10px, 1fr));
       grid-column: 1/-1;
       padding-left: 20px; } }
 
@@ -137,7 +136,8 @@ body {
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
   grid-column: 1/-1;
   font-family: "Bangers", cursive;
-  height: 600px; }
+  height: 700px;
+  max-width: 375px; }
   .About__bio {
     grid-column: 1/-1;
     color: #000;
@@ -151,7 +151,7 @@ body {
     @media only screen and (max-width: 667px) {
       .About__bio {
         grid-row: 1/-1;
-        grid-column: 1/-1; } }
+        grid-column: 1/8; } }
     .About__bio img {
       width: 200px;
       object-fit: cover;
