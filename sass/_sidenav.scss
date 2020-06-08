@@ -13,7 +13,13 @@
       grid-template-rows: 20px 60px 20px; //3 rows
       height:auto;
   }
-
+ 
+  // this
+  @media only screen and (max-width: $small) {   
+    grid-column:1/6;
+    grid-template-rows: repeat(2,minmax(10px,1fr));
+    
+  }
 
   &__picture {
     grid-column: 1/-1;
@@ -30,6 +36,12 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+
+    }
+    @media only screen and (max-width: $small) {
+      grid-row:1/-1;
+      display:none;
+      min-width: 200px;
     }
   }
 
@@ -53,6 +65,10 @@
       grid-column:2/-2;
      
   }
+  @media only screen and (max-width: $small) {   
+    grid-template-rows: repeat(6,minmax(20px,1fr));
+    grid-column: 1/-1;
+  }
    
 
     & ul {
@@ -64,6 +80,12 @@
         margin:0;
         padding:0;
       }
+
+      @media only screen and (max-width: $small) {   
+        grid-template-rows: repeat(6,minmax(20px,1fr));
+        display:inline;
+      }
+
       li {
         a {
           color: $c-yellow;

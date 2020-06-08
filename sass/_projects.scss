@@ -2,7 +2,7 @@
 
   font-family: "Bangers", cursive;
 
-
+ 
  
   .Webdev {
 
@@ -79,8 +79,12 @@
     }
   }
 
- 
+  // @media only screen and (max-width: $small) {   
+  //   grid-column:1/5;
+  
+  // }
 }
 .webdevprojects{
   margin-bottom:100px;
 }
+

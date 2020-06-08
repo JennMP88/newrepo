@@ -23,6 +23,9 @@ body {
   @media only screen and (max-width: 1280px) {
     .container2 {
       grid-template-columns: 25px repeat(8, minmax(100px, 1fr)) 25px; } }
+  @media only screen and (max-width: 667px) {
+    .container2 {
+      grid-template-columns: 8px repeat(4, minmax(10px, 1fr)); } }
 
 .Mainsection {
   display: grid;
@@ -41,6 +44,11 @@ body {
     .Mainsection {
       grid-row: 3/-1;
       grid-column: 1/-1; } }
+  @media only screen and (max-width: 667px) {
+    .Mainsection {
+      grid-template-rows: repeat(20, minmax(10px, 1fr));
+      grid-column: 1/-1;
+      padding-left: 20px; } }
 
 .Navbar {
   display: grid;
@@ -70,6 +78,10 @@ body {
       grid-row: 2/3;
       grid-template-rows: 20px 60px 20px;
       height: auto; } }
+  @media only screen and (max-width: 667px) {
+    .Sidenav {
+      grid-column: 1/6;
+      grid-template-rows: repeat(2, minmax(10px, 1fr)); } }
   .Sidenav__picture {
     grid-column: 1/-1;
     grid-row: 1/6;
@@ -81,6 +93,11 @@ body {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+    @media only screen and (max-width: 667px) {
+      .Sidenav__picture {
+        grid-row: 1/-1;
+        display: none;
+        min-width: 200px; } }
   .Sidenav__menubar {
     grid-column: 2/-2;
     grid-row: 2/5;
@@ -95,6 +112,10 @@ body {
       .Sidenav__menubar {
         grid-row: 2/3;
         grid-column: 2/-2; } }
+    @media only screen and (max-width: 667px) {
+      .Sidenav__menubar {
+        grid-template-rows: repeat(6, minmax(20px, 1fr));
+        grid-column: 1/-1; } }
     .Sidenav__menubar ul {
       list-style-type: none; }
       @media only screen and (max-width: 900px) {
@@ -103,6 +124,10 @@ body {
           justify-content: space-around;
           margin: 0;
           padding: 0; } }
+      @media only screen and (max-width: 667px) {
+        .Sidenav__menubar ul {
+          grid-template-rows: repeat(6, minmax(20px, 1fr));
+          display: inline; } }
       .Sidenav__menubar ul li a {
         color: #BCB859;
         text-decoration: none; }
@@ -123,6 +148,10 @@ body {
     @media only screen and (max-width: 900px) {
       .About__bio {
         padding-top: 40px; } }
+    @media only screen and (max-width: 667px) {
+      .About__bio {
+        grid-row: 1/-1;
+        grid-column: 1/-1; } }
     .About__bio img {
       width: 200px;
       object-fit: cover;
