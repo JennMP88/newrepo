@@ -23,6 +23,9 @@ body {
   @media only screen and (max-width: 1280px) {
     .container2 {
       grid-template-columns: 25px repeat(8, minmax(100px, 1fr)) 25px; } }
+  @media only screen and (max-width: 667px) {
+    .container2 {
+      grid-template-columns: 8px repeat(4, minmax(10px, 1fr)); } }
 
 .Mainsection {
   display: grid;
@@ -41,6 +44,10 @@ body {
     .Mainsection {
       grid-row: 3/-1;
       grid-column: 1/-1; } }
+  @media only screen and (max-width: 667px) {
+    .Mainsection {
+      grid-column: 1/-1;
+      padding-left: 20px; } }
 
 .Navbar {
   display: grid;
@@ -70,6 +77,10 @@ body {
       grid-row: 2/3;
       grid-template-rows: 20px 60px 20px;
       height: auto; } }
+  @media only screen and (max-width: 667px) {
+    .Sidenav {
+      grid-column: 1/6;
+      grid-template-rows: repeat(2, minmax(10px, 1fr)); } }
   .Sidenav__picture {
     grid-column: 1/-1;
     grid-row: 1/6;
@@ -81,6 +92,11 @@ body {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+    @media only screen and (max-width: 667px) {
+      .Sidenav__picture {
+        grid-row: 1/-1;
+        display: none;
+        min-width: 200px; } }
   .Sidenav__menubar {
     grid-column: 2/-2;
     grid-row: 2/5;
@@ -95,6 +111,10 @@ body {
       .Sidenav__menubar {
         grid-row: 2/3;
         grid-column: 2/-2; } }
+    @media only screen and (max-width: 667px) {
+      .Sidenav__menubar {
+        grid-template-rows: repeat(6, minmax(20px, 1fr));
+        grid-column: 1/-1; } }
     .Sidenav__menubar ul {
       list-style-type: none; }
       @media only screen and (max-width: 900px) {
@@ -103,6 +123,10 @@ body {
           justify-content: space-around;
           margin: 0;
           padding: 0; } }
+      @media only screen and (max-width: 667px) {
+        .Sidenav__menubar ul {
+          grid-template-rows: repeat(6, minmax(20px, 1fr));
+          display: inline; } }
       .Sidenav__menubar ul li a {
         color: #BCB859;
         text-decoration: none; }
@@ -112,7 +136,8 @@ body {
   grid-template-columns: repeat(8, minmax(max-content, 1fr));
   grid-column: 1/-1;
   font-family: "Bangers", cursive;
-  height: 600px; }
+  height: 700px;
+  max-width: 740px; }
   .About__bio {
     grid-column: 1/-1;
     color: #000;
@@ -123,6 +148,10 @@ body {
     @media only screen and (max-width: 900px) {
       .About__bio {
         padding-top: 40px; } }
+    @media only screen and (max-width: 667px) {
+      .About__bio {
+        grid-row: 1/-1;
+        grid-column: 1/8; } }
     .About__bio img {
       width: 200px;
       object-fit: cover;
@@ -173,6 +202,12 @@ body {
       border: 4px solid #000;
       text-decoration: none;
       text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+  @media only screen and (max-width: 667px) {
+    #Content {
+      grid-template-columns: repeat(8, minmax(max-content, 1fr));
+      max-width: 300px; }
+      #Content h3 {
+        max-width: 300px; } }
 
 .webdevprojects {
   margin-bottom: 100px; }
@@ -189,6 +224,14 @@ body {
     font-size: 64px;
     line-height: 68px;
     width: 500px; }
+  @media only screen and (max-width: 667px) {
+    #Resume {
+      max-width: 300px; }
+      #Resume h3 {
+        max-width: 300px; }
+      #Resume iframe {
+        max-width: 370px;
+        height: 500px; } }
 
 #Contact {
   font-family: 'Bangers', cursive; }
@@ -213,7 +256,7 @@ body {
     font-size: 22px; }
     #Contact .info .messageBox {
       height: 230px;
-      min-width: 250px;
+      max-width: 250px;
       width: 100%; }
     #Contact .info .formbox {
       width: 250px;
@@ -233,6 +276,15 @@ body {
       text-decoration: none;
       font-family: "Bangers", cursive;
       text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+  @media only screen and (max-width: 667px) {
+    #Contact {
+      max-width: 300px; }
+      #Contact h3 {
+        max-width: 300px; }
+      #Contact form {
+        max-width: 370px; }
+      #Contact .formbox {
+        max-width: 170px; } }
 
 #Technologies {
   grid-column: 1/-1;
@@ -319,6 +371,14 @@ body {
       grid-column: 1/2;
       grid-row: 6/7;
       padding-left: 10px; }
+  @media only screen and (max-width: 667px) {
+    #Technologies {
+      grid-template-columns: repeat(8, minmax(max-content, 1fr));
+      max-width: 300px; }
+      #Technologies h3 {
+        max-width: 300px; }
+      #Technologies .tech2 {
+        max-width: 300px; } }
 
 svg {
   height: 100px; }

@@ -7,8 +7,9 @@ $c-purple:#9A2A7B;
 
 
 $xlarge: 1280px; 
-$large: 1080px; 
-$medium: 900px;
+$large: 1080px; //desktop
+$medium: 900px; //laptop
+$small:667px;//iphone6
 
 *,
 *::before,
